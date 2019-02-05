@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang='es'>
+	<head>
+		<title>JS</title>
+		<meta charset='utf-8'>
+	</head>
+
+	<body>
+
+
+		<h1>JS | Conditionals and Loops</h1>
+
+
+		<script>
+
+/*
+
+		// Boolean logic operations: OR operator
+		console.log(true  || true)       // true
+		console.log(true  || false)      // true
+		console.log(false || true)       // true
+		console.log(false || false)      // false
+		console.log(false || 4 > 2)    	 // true
+		console.log(0 > 5 || 5 < 3)      // false
+
+
+
+
+		// Boolean logic operations: AND operator
+		console.log(true  && true)       // true
+		console.log(true  && false)      // false
+		console.log(false && true)       // false
+		console.log(false && false)      // false
+		console.log(false && 4 > 2)    	 // false
+		console.log(7 > 5 && 5 < 6)      // true
+
+
+
+
+		// Boolean logic operations: NOT operator
+		console.log(!false)       		// true
+		console.log(!true)      		// false
+		console.log(!4 < 2)      		// true
+		console.log(!1)      			// false
+		console.log(!0)      			// true
+*/
+
+
+
+
+/*
+	// CONDITIONALS
+
+		//  if...else conditional
+		var age = parseInt(prompt("¡Bienvenido al cine Iron Hack! ¿Cuál es tu edad?"))
+
+		if (age <= 16) {
+
+		  console.log("Te corresponde el descuento joven")
+
+		} else if (age >= 65) {
+
+		  console.log("Te corresponde el descuento tercera edad")
+
+		} else {
+
+		  console.log("No te corresponde ningún descuento")
+		}
+
+		console.log('Estructura abandonada')
+
+
+
+
+
+
+
+
+
+
+		// nested if...else conditional
+		var age = prompt('Bienvenido al supermercado Iron Hack! ¿Cuál es tu edad?')
+		var affCard = confirm('¿Tienes tarjeta de fidelización')
+
+		if (age === null) {		// cancelled or escaped prompt returns null
+
+			console.log('No se recibieron los datos. Reinicia la aplicación.')
+
+		} else {
+
+			if (affCard === false) {	// cancelled confirm returns false
+
+				console.log('¡Ops! Descuentos reservados a clientes fidelizados.')
+
+			} else {
+
+				if (age <= 16) {
+
+					console.log("Te corresponde el descuento joven")
+
+				} else if (age >= 65) {
+
+					console.log("Te corresponde el descuento tercera edad")
+
+				} else {
+
+					console.log("No te corresponde ningún descuento")
+				}
+			}
+		}
+
+		console.log('Estructura abandonada')
+
+
+
+
+
+
+		// switch conditional
+		var method = prompt('Escribe un métdo para conocer a qué objeto pertenece:');
+		var object = '';
+
+		switch (method) {
+
+			case 'prompt':
+			case 'confirm':
+			case 'close':
+				object = 'window'
+				break
+
+			case 'map':
+			case 'push':
+			case 'reduce':
+				object = 'array'
+				break
+
+			case 'touppercase':
+			case 'tolowercase':
+				object = 'string'
+				break
+
+			default:
+				object = 'DESCONOCIDO'
+				break
+		}
+
+		console.log('El método \'' + method + '\' corresponde al objeto ' + object)
+*/
+
+
+
+
+
+
+/*
+	// LOOPS
+
+
+
+		// while loop
+		var value = prompt('Indica un valor mayor que 100')
+
+		while (value < 100) {
+			value = prompt('Indica un valor mayor que 100')
+		}
+
+		console.log('Estructura abandonada')
+
+
+
+
+
+
+
+		// do...while loop
+		var value = prompt('Indica un valor mayor que 100')
+
+		do {
+			value = prompt('Indica un valor mayor que 100')
+		} while (value < 100)
+
+		console.log('Estructura abandonada')
+
+
+
+
+
+		// for loop
+		for (var i = 0; i < 100; i++) {
+
+			if (i === 50) {
+				console.log('Instrucciones de la iteración ' + i + ' omitidas')
+				continue;	// omits following instructions from the current loop
+			}
+
+			if (i === 80) {
+
+				console.log('Bucle abandonado prematuramente')
+				break;	// leaves loop
+			}
+
+			console.log('Iteración número ' + i)
+		}
+
+		console.log('Estructura abandonada')
+*/
+
+		</script>
+
+	</body>
+</html>
